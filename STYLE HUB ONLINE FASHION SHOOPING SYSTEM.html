@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHub - Online Fashion Retailer</title>
+    <style>
+        :root {
+            --primary-color: #db2777;
+            --secondary-color: #fce7f3;
+            --bg-color: #fdf2f8;
+            --text-color: #1f2937;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #be185d);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.8rem;
+        }
+
+        ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .category-card {
+            background: var(--secondary-color);
+            padding: 1.2rem;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+
+        input, select {
+            padding: 0.75rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.85rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #be185d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #1f2937;
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>StyleHub</h1>
+        <p>Premier Online Fashion Retailer & E-Commerce Platform</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Overview Section -->
+        <section>
+            <h2>System Overview</h2>
+            <p>
+                StyleHub, a premier online fashion retailer, introduces its comprehensive e-commerce platform designed to cater to fashion enthusiasts[cite: 8]. The website offers an extensive collection of clothing, footwear, and accessories for men, women, and children, with categories such as casual wear, formal attire, and seasonal collections[cite: 8].
+            </p>
+            <p>
+                Key functionalities include user registration and login, advanced search and filtering options, detailed product descriptions with high-resolution images, customer reviews, and size guides[cite: 8]. The platform supports secure payment methods, order tracking, and an easy return and exchange policy[cite: 8]. Customers can create wish lists, receive personalized style recommendations, and enjoy exclusive online discounts and flash sales[cite: 8]. StyleHub aims to provide a seamless and enjoyable shopping experience, keeping users up-to-date with the latest fashion trends[cite: 8].
+            </p>
+            <p>
+                The core of an online shop is the product catalogue and the cart[cite: 8]. The users browse products which are grouped in categories and add the desired ones to the cart[cite: 8]. Next, there is transaction handling, which in its simplest form consists in the order being sent via e-mail to the seller, but most often it takes the whole buying process through separate order statuses[cite: 8].
+            </p>
+        </section>
+
+        <!-- Product Categories -->
+        <section>
+            <h2>Fashion Categories & Collections</h2>
+            <div class="category-grid">
+                <div class="category-card">Men's Wear<br><small>Casual, Formal, Ethnic</small></div>
+                <div class="category-card">Women's Wear<br><small>Dresses, Ethnic, Western</small></div>
+                <div class="category-card">Children's Collection<br><small>Apparel & Footwear</small></div>
+                <div class="category-card">Accessories & Footwear<br><small>Bags, Shoes, Jewelry</small></div>
+            </div>
+        </section>
+
+        <!-- Key Features List -->
+        <section>
+            <h2>Platform Features</h2>
+            <ul>
+                <li>User registration and secure login[cite: 8]</li>
+                <li>Advanced search and filtering options[cite: 8]</li>
+                <li>Detailed product descriptions with high-resolution images and size guides[cite: 8]</li>
+                <li>Customer reviews and ratings[cite: 8]</li>
+                <li>Shopping cart and wishlist management[cite: 8]</li>
+                <li>Secure payment methods & transaction handling[cite: 8]</li>
+                <li>Order tracking, returns, and exchanges[cite: 8]</li>
+                <li>Personalized style recommendations and flash sales[cite: 8]</li>
+            </ul>
+        </section>
+
+        <!-- Quick Search & Shopping Simulation Form -->
+        <section>
+            <h2>Quick Product Search & Cart Simulation</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="search">Search Fashion Products</label>
+                    <input type="text" id="search" name="search" placeholder="Search casual wear, formal attire, footwear..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Select Category</label>
+                    <select id="category" name="category" required>
+                        <option value="">-- Choose Category --</option>
+                        <option value="mens">Men's Wear</option>
+                        <option value="womens">Women's Wear</option>
+                        <option value="kids">Children's Collection</option>
+                        <option value="accessories">Accessories & Footwear</option>
+                    </select>
+                </div>
+
+                <button type="submit">Browse Catalog</button>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 StyleHub Fashion Retailer. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

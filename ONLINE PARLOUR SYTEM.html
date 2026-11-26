@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Beauty Parlour Appointment Booking System</title>
+    <style>
+        :root {
+            --primary-color: #d81b60;
+            --secondary-color: #f8bbd0;
+            --bg-color: #fafafa;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #ad1457);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 0.6rem 0;
+            position: relative;
+            padding-left: 1.8rem;
+        }
+
+        ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .booking-form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+
+        input, select, textarea {
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 5px rgba(216, 27, 96, 0.3);
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.85rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ad1457;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #222;
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Internet Programming Lab Experiment</h1>
+        <p>Online Beauty Parlour Appointment Booking System</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Overview Section -->
+        <section>
+            <h2>System Overview</h2>
+            <p>
+                The online beauty parlour appointment booking system allows users to browse available services, view stylist profiles, and check appointment slots in real-time. Users can register, log in, and manage their appointments through a personal dashboard. The booking process includes selecting services, choosing a stylist, selecting a date and time, and making secure payments via an integrated payment gateway.
+            </p>
+            <p>
+                Admins can manage service offerings, stylist schedules, and user accounts through a comprehensive admin panel. Users receive appointment confirmation emails and reminders, with the option to reschedule or cancel appointments through their dashboard. The website is fully responsive, ensuring an optimal experience on all devices. This website helps customers to search for any beauty parlour and book appointments as their preferable date and time.
+            </p>
+        </section>
+
+        <!-- Reservations Calendar Features -->
+        <section>
+            <h2>Reservations Calendar Features</h2>
+            <ul>
+                <li>Create, edit, and cancel reservations</li>
+                <li>Lockout unavailable hours</li>
+                <li>Get the crucial information for each date on the calendar</li>
+                <li>Manage customer personal accounts seamlessly</li>
+            </ul>
+        </section>
+
+        <!-- Interactive Quick Booking Form Simulation -->
+        <section>
+            <h2>Book an Appointment</h2>
+            <form class="booking-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="service">Select Service</label>
+                    <select id="service" name="service" required>
+                        <option value="">-- Choose a Beauty Service --</option>
+                        <option value="haircut">Hair Styling & Haircut</option>
+                        <option value="facial">Advanced Facial & Skincare</option>
+                        <option value="manicure">Manicure & Pedicure</option>
+                        <option value="makeup">Bridal & Party Makeup</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="stylist">Choose Stylist</label>
+                    <select id="stylist" name="stylist" required>
+                        <option value="">-- Select Preferred Stylist --</option>
+                        <option value="stylist1">Jessica (Senior Hair Stylist)</option>
+                        <option value="stylist2">Amanda (Skincare Specialist)</option>
+                        <option value="stylist3">Chloe (Makeup Artist)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointment-date">Preferred Date & Time Slot</label>
+                    <input type="datetime-local" id="appointment-date" name="appointment_date" required>
+                </div>
+
+                <button type="submit">Confirm and Proceed to Payment</button>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Internet Programming Lab Assignment. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

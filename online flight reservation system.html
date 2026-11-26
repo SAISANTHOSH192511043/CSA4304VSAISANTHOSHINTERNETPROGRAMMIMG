@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Flight Reservation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        ul {
+            line-height: 2;
+        }
+
+        .container {
+            background-color: white;
+            padding: 25px;
+            max-width: 900px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        a {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Online Flight Reservation System</h1>
+
+        <h2>Introduction</h2>
+
+        <p>
+            The online flight reservation system enables users to search
+            for flights by destination, date, and class. It displays
+            available flights with seat availability.
+        </p>
+
+        <p>
+            Users can register, log in, and manage their reservations
+            through a personal dashboard. The booking process includes
+            selecting flights, choosing seats, entering passenger details,
+            and making secure payments.
+        </p>
+
+        <p>
+            Administrators can manage flight schedules, seat inventory,
+            and user accounts using an admin panel.
+        </p>
+
+        <h2>Features</h2>
+
+        <ul>
+            <li>Administrator User Login Page</li>
+            <li>User Registration and Login</li>
+            <li>Search Flights by Destination and Date</li>
+            <li>View Available Seats and Ticket Prices</li>
+            <li>Book Flights and Select Seats</li>
+            <li>Enter Passenger Details</li>
+            <li>Secure Online Payment</li>
+            <li>Booking Confirmation and E-Tickets</li>
+            <li>View Booking History</li>
+            <li>Manage Flight Schedules</li>
+            <li>Responsive Website Design</li>
+        </ul>
+
+        <h2>Flight Search</h2>
+
+        <form>
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from"
+                   placeholder="Departure City" required>
+
+            <br><br>
+
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to"
+                   placeholder="Destination City" required>
+
+            <br><br>
+
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <br><br>
+
+            <label for="class">Travel Class:</label>
+            <select id="class" name="class">
+                <option>Economy</option>
+                <option>Business</option>
+                <option>First Class</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Search Flights</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
